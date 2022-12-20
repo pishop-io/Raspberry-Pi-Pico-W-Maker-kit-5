@@ -102,7 +102,7 @@ wlan.connect("mySSID", "myPASSWORD")
 ![Pico and sensor wiring Diagram!](pico-HA-wiring.png "Pico wiring diagram")
 - Clone the code
 ````bash
-git clone https://github.com/pishop-io/rp-pico-w-ha
+git clone hhttps://github.com/pishop-io/Raspberry-Pi-Pico-W-Maker-kit-5.git
 ````
 - Ensure network, dht and machine are install on Thonny
     - [Installing Python packages](https://projects.raspberrypi.org/en/projects/install-python-packages/2)
