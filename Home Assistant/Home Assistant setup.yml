@@ -1,0 +1,17 @@
+sensor:
+  - platform: rest
+    name: "Test Temp Pico W"
+    scan_interval: 30
+    json_attributes:
+      - hum
+    resource: "http://10.0.0.94:80/"
+    unit_of_measurement: "°C"
+    value_template: "{{ value_json.temp }}"
+
+  - platform: template
+    sensors:
+      picohum:
+        friendly_name: "Test Humidity"
+        value_template: "{{ state_attr('sensor.test_temp_pico_w', 'hum')}}"
+        unit_of_measurement: "%"
+        device_class: humidity
