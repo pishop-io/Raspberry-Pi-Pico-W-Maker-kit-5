@@ -89,28 +89,38 @@ sequenceDiagram
 ### Network Configuration
 - Follow [How to run](#how-to-run) below
 - update main.py line 28 with your static IP, Subnet Mask for IP Network, router IP and DNS. The subnet mask 255.255.255.0 address is the most common subnet mask used on computers connected to Internet Protocol (IPv4) networks. '8.8.8.8' is the Google Public DNS. 
+
 ````bash
 wlan.ifconfig(('10.0.0.94', '255.255.255.0', '10.0.0.2', '8.8.8.8')) 
 ````
+
 - update main.py line 30 with your SSID and password to your network
+
 ````bash
 wlan.connect("mySSID", "myPASSWORD") 
 ````
 
 ### How to run
 - Connect your sensor
+
 ![Pico and sensor wiring Diagram!](pico-HA-wiring.png "Pico wiring diagram")
+
 - Clone the code
+
 ````bash
 git clone https://github.com/pishop-io/Raspberry-Pi-Pico-W-Maker-kit-5.git
 ````
-- Ensure network, dht and machine are install on Thonny
+
+- Ensure network, dht and machine are installed on Thonny
     - [Installing Python packages](https://projects.raspberrypi.org/en/projects/install-python-packages/2)
+
 - OR
+
 ````bash
 pip install dht
 pip install network
 ````
+
 - Save main.py to Raspberry Pi Pico W
 
 ### Contact:
